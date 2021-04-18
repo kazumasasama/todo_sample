@@ -47,7 +47,7 @@ class TodosController < ApplicationController
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_todo
-      @todo = @goals.todos.find_by(id: params[:id])
+      @todo = @goal.todos.find_by(id: params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
